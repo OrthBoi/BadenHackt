@@ -1,2 +1,2 @@
 # BadenHackt
-Repo für Auxtek Team 2. 
+Repo für Autexis Team 2. 
