@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="common_styles.css" />
   </head>
   <body>
-    <div id="mainHomepageWrapping">
+    <div id="mainWrapping">
       <div id="homepageLogoAndTitle">
         <div id="homepageLogo">
           <a href="index.html">
@@ -32,11 +32,13 @@
           </div>
           <div id="companyLoginButtons">
             <div id="buttonLoginFormDiv">
-              <button id="buttonLoginForm">Login</button>
+              <a href="companyOverview.html">
+                <button id="buttonLoginForm">Login</button>
+              </a>
             </div>
             <div id="buttonRegisterFormDiv">
               <a href="companyregister.html">
-                <button>Registrieren</button>
+                <button id="registerButton">Registrieren</button>
               </a>
             </div>
           </div>
@@ -50,7 +52,7 @@
         <p>&copy; 2026 DataLink Technology. All rights reserved.</p>
       </div>
       <div>
-        <p>
+        <p id="emailContact">
           Contact:
           <a href="mailto:info@datalink-technology.com"
             >info@datalink-technology.com</a

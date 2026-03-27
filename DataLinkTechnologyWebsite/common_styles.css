@@ -13,7 +13,7 @@ body {
   margin: 0; /* Browser-Margin entfernen */
 }
 
-a {
+footer a {
   color: cyan;
   text-decoration: none;
 }
@@ -25,7 +25,7 @@ a {
 
 /* Homepage  */
 
-#mainHomepageWrapping {
+#mainWrapping {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -49,6 +49,11 @@ a {
   height: 100px;
   border-radius: 5px;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 #homepageLogo {
@@ -103,6 +108,14 @@ img:pressed
   margin: 50px auto;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
+
+#registerButton {
+  background-color: rgb(67, 67, 67);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 /* Company Login */
 
 #companyLoginButtons {
@@ -116,6 +129,68 @@ img:pressed
 #buttonRegisterForm {
   align-items: end;
   justify-content: right;
+}
+
+/* Company Overview */
+
+#companyOverviewWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding-top: 15px;
+}
+
+#editPanelCompanyOverviewButton {
+  background-color: rgb(67, 67, 67);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#verifyEditPanelCompanyOverviewButton {
+  background-color: rgb(67, 67, 67);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*  User Overview */
+
+.dropdown {
+  display: inline-block;
+}
+.dropdown button {
+  background-color: rgb(67, 67, 67);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.dropdown .content {
+  display: none;
+  position: absolute;
+  background-color: hsl(0, 0%, 95%);
+  min-width: 100px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.dropdown:hover .content {
+  display: block;
+}
+.dropdown:hover button {
+  background-color: rgb(75 75, 75);
+}
+.dropdown a:hover {
+  background-color: hsl(0, 0%, 90%);
 }
 
 /* Footer related styles */
@@ -132,7 +207,4 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-}
-
-#emailContact {
 }
