@@ -1,0 +1,41 @@
+# VORLAGE FÜR PIPELINE
+
+name: Universal CI/CD Pipeline
+
+# Wann soll die Pipeline laufen?
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Code vom Repo hinzufpgen
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Setup und sprache auswählen
+      - name: Setup environment
+        run: |
+          
+
+      # Dependencies installieren
+      - name: Install dependencies
+        run: |
+         
+
+      # Tests ausführen
+      - name: Run tests
+        run: |
+        
+
+    
+
+      # Deployment fpr Docker und server
+      - name: Deploy project
+        run: |
+      
