@@ -1,0 +1,42 @@
+@page
+
+
+ 
+    <div id="mainHomepageWrapping">
+      <div id="homepageLogoAndTitle">
+        <div id="homepageLogo">
+          <a asp-page="Index.cshtml">
+            <img src="images/logo.png" alt="DataLink Technology Logo" />
+          </a>
+        </div>
+        <div id="homepageTitle"><h1>DataLink Technology©</h1></div>
+      </div>
+
+      <!-- Main Login Bereich -->
+      <div id="mainLogin">
+        <h2>Login als Unternehmen</h2>
+        <div id="companyLoginForm">
+          <div>
+            <label for="username">Nutzer:</label>
+            <input type="text" id="username" name="username" />
+          </div>
+          <div>
+            <label for="password">Passwort:</label>
+            <input type="password" id="password" name="password" />
+          </div>
+          <div id="companyLoginButtons">
+            <div id="buttonLoginFormDiv">
+              <button id="buttonLoginForm">Login</button>
+            </div>
+            <div id="buttonRegisterFormDiv">
+            <a asp-page="Companyregister">
+           
+                <button>Registrieren</button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+ 
